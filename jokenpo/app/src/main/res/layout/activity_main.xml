@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtresultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha uma opção!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435" />
+
+    <ImageButton
+        android:id="@+id/btnpapel"
+        android:layout_width="184dp"
+        android:layout_height="135dp"
+        android:onClick="selecionaPapel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.654"
+        app:srcCompat="@drawable/papel" />
+
+    <ImageButton
+        android:id="@+id/btnpedra"
+        android:layout_width="171dp"
+        android:layout_height="136dp"
+        android:layout_marginBottom="192dp"
+        android:onClick="selecionaPedra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pedra" />
+
+    <ImageButton
+        android:id="@+id/btntesoura"
+        android:layout_width="186dp"
+        android:layout_height="133dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="selecionaTesoura"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnpedra"
+        app:layout_constraintVertical_bias="0.419"
+        app:srcCompat="@drawable/tesoura" />
+
+    <ImageButton
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/txtresultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.569"
+        app:srcCompat="@drawable/padrao"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnferro"
+        android:layout_width="165dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="24dp"
+        android:onClick="selecionaFerro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btntesoura"
+        app:layout_constraintTop_toBottomOf="@+id/txtresultado"
+        app:layout_constraintVertical_bias="0.877"
+        app:srcCompat="@drawable/ferro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
